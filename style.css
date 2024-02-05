@@ -1,0 +1,428 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+    letter-spacing: .4px;
+
+
+}
+
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-dark: #353535;
+    --color-dark-variant: #555555;
+
+    --transition: .4s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 120%;
+
+}
+
+h1 {
+    font-size: 30px;
+    color: var(--color-black);
+}
+
+h2 {
+    font-size: 70px;
+    color: var(--color-dark-variant);
+}
+
+h3 {
+    font-size: 26px;
+    color: var(--color-black);
+}
+
+h4 {
+    font-size: 19px;
+    color: var(--color-black);
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+p {
+    font-size: 17px;
+    line-height: 140%;
+    
+}
+
+.heading-p {
+    padding-top: 9rem;
+    text-align: center;
+}
+
+a {
+    font-size: 24px;
+    color: var(--color-black);
+    text-decoration-color: var(--color-white);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-dark-variant);
+    text-decoration-color: var(--color-dark-variant) !important;
+    text-underline-offset: 1rem;
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: var(--color-black);
+    border: 1px solid var(--color-dark-variant);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-dark-variant);
+    color: var(--color-white);
+
+}
+
+.btn-dark {
+    color: var(--color-white);
+    background: var(--color-dark);
+    text-decoration: none !important;
+
+}
+
+.btn-dark:hover {
+    background: var(--color-black);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.icon1 {
+    width: 32px;
+    height: max-content;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+
+}
+
+/* ...........................start nav bar.............................. */
+nav {
+    height: 4rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+
+    background: white;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ...........................end nav bar.............................. */
+
+/* .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+} */
+/* ...........................toolip start section.............................. */
+.tooltip img {
+    width: 65%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 4px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.market1{
+    width: 70px;  
+}
+.market1 .tooltiptext{
+    border-radius: 20px !important;
+}
+
+.groups1{
+width: 70px;
+}
+.gaming1{
+    width: 70px;
+}
+.more1{
+    width: 70px;
+}
+/* ...........................toolip section end.............................. */
+
+
+/* ...........................start header section.............................. */
+header {
+    padding-top: rem;
+}
+
+.header-left img {
+    border-radius: 9px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.logo img {
+    padding-top: 1rem;
+    width: 65%;
+}
+
+/* ............hobt1 section............. */
+.hobt1 {
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+    position: absolute;
+    top: 62%;
+    right: 20%;
+
+
+}
+
+.hobt1 button {
+    padding: 11px;
+    border-radius: 7px;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 7px;
+}
+
+.hobt1 img {
+    width: 10%;
+
+}
+
+
+/* ..............end hobt1 section.................... */
+
+/* ..............end hobt2 section.................... */
+
+.hobt2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 160px;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    top: 55%;
+    right: 40%;
+    border-style: solid;
+}
+.name{
+    margin-top: 13rem;
+    text-align: center;
+    
+}
+
+.namebt1 button {
+   display: flex;
+    border: none;
+    
+    padding: 15px 32px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+  }
+  /* .namebt11{
+    background-color: rgb(89, 89, 228);
+  }  */
+
+  .namebt1 button:hover{
+    background: #757373;
+    transform: var(--transition);
+    background-color: rgb(89, 89, 228);
+  }
+.namebt1 svg{
+    height: 17px;
+    margin-right: 10px;
+}
+.namebt1 img{
+    width: 20%;
+    
+    margin-inline: auto;
+}
+  hr {
+    border: .1px solid #757373; /* Black line */
+    margin: 20px 0; /* Add some spacing above and below the line */
+  }
+
+  .card {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .p1{
+    text-align: center;
+  }
+  .cb1{
+    font-size: 30px;
+    width: 900px;
+    padding: 9px;
+    border-radius: 7px;
+  }
+
+  .cb2 button:hover{
+    background: #757373;
+    transform: var(--transition);
+    background-color: rgb(89, 89, 228);
+  }
+
+
+
+  @media(max-width:1024px){
+    .hobt1{
+        top: 35%;
+    right: 0%;
+    }
+    .hobt2{
+        top: 25%;
+        right: 30%;
+    }
+.ci1{
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+  }
+
+    start about */
+    /* .about-container{
+        gap: 30px;
+    }
+    .basic-edu{
+        gap: 20px;
+    }
+    /* start experience */
+    /* .experience-container{
+        gap: 30px;
+    } */
+
+    /* start projects */
+    /* .project-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+} */
+
+ /* height: 180px;
+width: 180px;
+border-radius: 160px;
+overflow: hidden;
+background: #fff;
+position: absolute;
+top: 40%;
+left: 5%;
+border-style: double  */
